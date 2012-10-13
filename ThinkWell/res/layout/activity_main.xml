@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <RelativeLayout 
+        android:id="@+id/topline"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/date"
+   	        android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:text="@string/date"/>        
+        <Button 
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            android:layout_alignParentRight="true">
+        </Button>
+    </RelativeLayout>
+    <RelativeLayout 
+    	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"> 
+        
+        <Button 
+            android:id="@+id/diary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/diary"
+            android:layout_alignParentLeft="true">            
+        </Button>
+        
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_toRightOf="@id/diary"
+        	android:layout_toLeftOf="@id/financy">
+       		<TextView
+       		    android:id="@+id/schedule"
+       		    android:layout_width="fill_parent"
+       		    android:layout_height="wrap_content"
+       		    android:layout_alignParentTop="true"
+       		    android:text="@string/schedule" >
+
+            </TextView>
+
+            <Button
+                android:id="@+id/event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/schedule"
+                android:text="@string/event" >
+
+            </Button>
+
+            <Button
+                android:id="@+id/project"
+                android:text="@string/project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/schedule" >
+            </Button>
+            
+        </RelativeLayout>
+        <Button 
+            android:id="@+id/financy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/financy" />
+        </Button>
+        
+            
+    </RelativeLayout>
+    
+    <RelativeLayout 
+   	    android:layout_width="fill_parent"
+        android:layout_height="fill_parent">      
+    </RelativeLayout>
+
+</LinearLayout>
