@@ -1,6 +1,0 @@
-每个人试一下
-swith
-commit 
-push
-和
-pull
